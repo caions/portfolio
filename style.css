@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  max-width: 1050px;
+  font-family: "Roboto", sans-serif;
+  background-color: #19323c;
+  color: #f3f7f0;
+  margin: 40px auto;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f7f0;
+  padding: 5px 10px;
+}
+
+a:hover {
+  background-color: #f2545b;
+}
+
+#header {
+  text-align: right;
+}
+
+#profile {
+  max-width: 450px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#profile-image {
+  width: 185px;
+  padding: 10px;
+  border: solid 5px #f2545b;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+#profile-name {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+#profile-description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+#profile-cv-link {
+  margin-bottom: 30px;
+  font-weight: bolder;
+  border: solid 2px #f2545b;
+}
+
+#experiences{
+  border: #f2545b solid 1px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#card-container{
+  margin-top: 30px;
+  border: #f2545b solid 1px;
+  display: inline-flex;
+}
+
+/* media querys */
+
+@media (max-width: 630px){
+  body{
+    margin: 40px 40px;
+  }
+
+  #header{
+    text-align: center;
+  }
+  #header a {
+    text-align: center;
+
+  }
+  #profile-name {
+    font-size: 2.5rem;
+  }
+  #profile-description {
+    font-size: 0.83rem;
+  }
+}
