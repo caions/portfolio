@@ -79,18 +79,44 @@ a:visited {
 #experiences-container {
   text-align: center;
   margin-bottom: 50px;
-  border: 1px solid #f2545b;
 }
 
 #card-container {
   text-align: left;
-  margin: 30px 20px;
+  margin: 30px 10px;
   display: inline-flex;
-  border: 1px solid yellow;
 }
 
-#card {
-  padding: 10px;
+.card {
+  border-radius: 7px;
+  padding: 15px 25px;
+  border: 1px solid #19323c;
+  margin: 2px;
+  background-color: #213a44;
+  transition: border-bottom 500ms;
+  box-shadow: 0px 0px 20px 3px #112229;
+}
+
+.card:hover{
+  border-bottom: #f2545b solid 10px;
+}
+
+.card-icon {
+  /*TODO ADICIONAR FUNDO CIRCULAR NO ICONE*/
+  color: #f3f7f0;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
 }
 
 #contact-container {
@@ -116,12 +142,12 @@ a:visited {
   margin-bottom: 20px;
 }
 
-.contact-details-group{
+.contact-details-group {
   display: flex;
   align-items: center;
 }
 
-.contact-details-group i{
+.contact-details-group i {
   margin-right: 10px;
   font-size: 15px;
 }
@@ -227,9 +253,17 @@ textarea:focus {
     font-size: 0.83rem;
   }
 
-  #card-container{
+  #card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+
+/* animations
+
+@keyframes mymove {
+  50% {
+    border-bottom: #f2545b solid 10px;
+  }
+} */
