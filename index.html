@@ -21,7 +21,7 @@
   </head>
   <body>
     <div id="header">
-      <a href="#">Início</a>
+      <a href="#profile-container">Perfil</a>
       <a href="#experiences-container">Experiências</a>
       <a href="#contact-container">Contato</a>
     </div>
@@ -33,7 +33,9 @@
         maxime labore laborum expedita omnis, fugit cupiditate, tenetur
         repudiandae, sunt dignissimos
       </p>
-      <a id="profile-cv-link" href="#">Baixar Curriculo</a>
+      <a id="profile-cv-link" href="Caio's_Resume.pdf" target="blank" download
+        >Baixar Curriculo</a
+      >
     </div>
     <div id="experiences-container">
       <h2>Experiências</h2>
@@ -62,7 +64,7 @@
       <h2 id="contact-title">Contato</h2>
       <div id="contact-content">
         <div id="adress-content">
-          <h3>Get in touch</h3>
+          <h3>Entrar em contato</h3>
           <iframe
             id="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127394.50263022544!2d-38.589656338486265!3d-3.793140330719424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1637538960584!5m2!1spt-BR!2sbr"
@@ -73,14 +75,26 @@
             loading="lazy"
           ></iframe>
           <div id="contact-details">
-            <p><i class="fas fa-map-marker-alt"> Fortaleza-Ceará, BRA</i></p>
-            <p><i class="fas fa-envelope"> caionsantosen@gmail.com</i></p>
-            <p><i class="fab fa-whatsapp"> +55 85 98605-5270</i></p>
-            <p><i class="fas fa-check"> Freelance Avaliable</i></p>
+            <div class="contact-details-group">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Fortaleza-Ceará, BRA</p>
+            </div>
+            <div class="contact-details-group">
+              <i class="fas fa-envelope"></i>
+              <p>caionsantosen@gmail.com</p>
+            </div>
+            <div class="contact-details-group">
+              <i class="fab fa-whatsapp"></i>
+              <p>+55 85 98605-5270</p>
+            </div>
+            <div class="contact-details-group">
+              <i class="fas fa-check"></i>
+              <p>Freelance Avaliable</p>
+            </div>
           </div>
         </div>
         <form action="" id="form-content">
-          <h3>Contact Form</h3>
+          <h3>Formulário de Contato</h3>
           <div class="form-group">
             <i class="fas fa-user"></i>
             <input
@@ -119,8 +133,19 @@
     <div id="footer-container">
       <p>2021 Caio Nascimento. Todos os direitos reservados</p>
       <span id="social-icons">
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github-square"></i>
+        <a
+          href="https://www.linkedin.com/in/caionsantos/"
+          target="blank"
+          title="ir para a pagina do linkedin"
+        >
+          <i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/caions"
+          target="blank"
+          title="ir para a pagina do github"
+          ><i class="fab fa-github-square"></i
+        ></a>
       </span>
     </div>
   </body>

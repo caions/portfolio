@@ -22,16 +22,23 @@ p {
 
 a {
   text-decoration: none;
-  color: #f3f7f0;
-  padding: 5px 10px;
 }
 
-a:hover {
-  background-color: #f2545b;
+a:visited {
+  color: inherit;
 }
 
 #header {
   text-align: right;
+}
+
+#header a {
+  /* color: #f3f7f0; */
+  padding: 5px 10px;
+}
+
+#header a:hover {
+  background-color: #f2545b;
 }
 
 #profile-container {
@@ -58,20 +65,28 @@ a:hover {
 }
 
 #profile-cv-link {
+  color: #f3f7f0;
+  padding: 5px 10px;
   margin-bottom: 30px;
   font-weight: bolder;
   border: solid 2px #f2545b;
 }
 
+#profile-cv-link:hover {
+  background-color: #f2545b;
+}
+
 #experiences-container {
   text-align: center;
   margin-bottom: 50px;
+  border: 1px solid #f2545b;
 }
 
 #card-container {
   text-align: left;
   margin: 30px 20px;
   display: inline-flex;
+  border: 1px solid yellow;
 }
 
 #card {
@@ -82,7 +97,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 #contact-title {
@@ -101,8 +116,14 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* TODO ADICIONAR ESPAÇO ENTRE O ICONE E O PARAGRAFO */
-#contact-details p i {
+.contact-details-group{
+  display: flex;
+  align-items: center;
+}
+
+.contact-details-group i{
+  margin-right: 10px;
+  font-size: 15px;
 }
 
 #adress-content {
@@ -169,7 +190,7 @@ textarea:focus {
   margin-top: 50px;
 }
 
-#footer-container{
+#footer-container {
   display: flex;
   max-width: 500px;
   margin: auto;
@@ -180,17 +201,16 @@ textarea:focus {
   padding: 15px;
 }
 
-#footer-container i{
+#footer-container i {
   font-size: 30px;
   margin-left: 15px;
 }
-
 
 /* media querys */
 
 @media (max-width: 630px) {
   body {
-    margin: 40px 40px;
+    margin: 40px 30px;
   }
 
   #header {
@@ -205,5 +225,11 @@ textarea:focus {
   }
   #profile-description {
     font-size: 0.83rem;
+  }
+
+  #card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
