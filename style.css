@@ -11,6 +11,11 @@ body {
   margin: 40px auto;
 }
 
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
 h2 {
   font-size: 2.5rem;
 }
@@ -22,6 +27,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #f3f7f0;
 }
 
 a:visited {
@@ -82,22 +88,33 @@ a:visited {
 }
 
 #card-container {
+  height: 285px;
   text-align: left;
   margin: 30px 10px;
   display: inline-flex;
 }
 
 .card {
+  margin: 0px 15px;
   border-radius: 7px;
+  overflow: auto;
   padding: 15px 25px;
   border: 1px solid #19323c;
-  margin: 2px;
   background-color: #213a44;
-  transition: border-bottom 500ms;
   box-shadow: 0px 0px 20px 3px #112229;
+  transition: border-bottom 500ms;
 }
 
-.card:hover{
+.card::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: #11222994;
+  border-radius: 5px;
+}
+
+.card:hover {
   border-bottom: #f2545b solid 10px;
 }
 
@@ -233,6 +250,29 @@ textarea:focus {
 }
 
 /* media querys */
+
+@media (max-width: 800px) {
+
+  #card-container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  .card {
+    margin: auto;
+    max-width: 313px;
+    height: 285px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    overflow: unset;
+    padding: 15px 25px;
+    border: 1px solid #19323c;
+    background-color: #213a44;
+    box-shadow: 0px 0px 20px 3px #112229;
+    transition: border-bottom 500ms;
+  }
+}
 
 @media (max-width: 630px) {
   body {
