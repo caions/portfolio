@@ -90,7 +90,6 @@ a:visited {
 }
 
 #card-container {
-  height: 285px;
   text-align: left;
   margin: 30px 10px;
   display: flex;
@@ -99,7 +98,6 @@ a:visited {
 .card {
   margin: 0px 15px;
   border-radius: 7px;
-  overflow: auto;
   padding: 15px 25px;
   border: 1px solid #19323c;
   background-color: #213a44;
@@ -142,15 +140,6 @@ a:visited {
 .card:nth-child(3):hover #cloud-icon {
   color: #e31f71;
   background: #4f2839;
-}
-
-.card::-webkit-scrollbar {
-  width: 5px;
-}
-
-.card::-webkit-scrollbar-thumb {
-  background: #11222994;
-  border-radius: 5px;
 }
 
 .card-icon {
@@ -295,13 +284,11 @@ textarea:focus {
   #card-container {
     display: flex;
     flex-direction: column;
-    height: 800px;
   }
 
   .card {
     margin: auto;
     max-width: 313px;
-    height: 285px;
     margin-bottom: 10px;
     border-radius: 7px;
     overflow: unset;
