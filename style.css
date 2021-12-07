@@ -50,7 +50,7 @@ a:visited {
 
 #profile-container {
   max-width: 450px;
-  margin: 100px auto;
+  margin: 90px auto;
   text-align: center;
 }
 
@@ -93,6 +93,7 @@ a:visited {
   text-align: left;
   margin: 30px 10px;
   display: flex;
+  min-height: 310px;
 }
 
 .card {
@@ -113,7 +114,6 @@ a:visited {
 .card-content:hover {
   opacity: 1;
 }
-
 
 .card:nth-child(1):hover {
   border-bottom: #5fdafa solid 10px;
@@ -227,8 +227,17 @@ a:visited {
 }
 
 .form-group textarea {
-  height: 65px;
+  height: 126px;
   resize: none;
+}
+
+.form-group textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
+  background: #11222994;
+  border-radius: 5px;
 }
 
 .form-group input,
@@ -258,19 +267,14 @@ textarea:focus {
   background-color: #f2545b;
   border-radius: 4px;
   padding: 8px;
-  max-width: 35%;
-  margin-top: 50px;
+  margin-top: 29px;
+  float: right;
 }
 
 #footer-container {
   display: flex;
-  max-width: 500px;
-  margin: auto;
   justify-content: center;
   align-items: center;
-  background-color: #f3f7f0;
-  color: #19323c;
-  padding: 15px;
 }
 
 #footer-container i {
@@ -290,13 +294,41 @@ textarea:focus {
     margin: auto;
     max-width: 313px;
     margin-bottom: 10px;
-    border-radius: 7px;
     overflow: unset;
-    padding: 15px 25px;
-    border: 1px solid #19323c;
-    background-color: #213a44;
-    box-shadow: 0px 0px 20px 3px #112229;
-    transition: border-bottom 500ms;
+  }
+
+  #adress-content {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  #contact-container {
+    margin-bottom: 0;
+  }
+
+  #contact-content {
+    flex-direction: column-reverse;
+  }
+
+  #contact-content h3 {
+    display: none;
+  }
+
+  #form-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  #map {
+    display: none;
+  }
+
+  #footer-container {
+    height: 107px;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -312,6 +344,11 @@ textarea:focus {
     text-align: center;
     padding: 0;
   }
+
+  #profile-container {
+    margin: 50px auto;
+  }
+
   #profile-name {
     font-size: 2.5rem;
   }
@@ -323,6 +360,16 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #footer-container span {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  #form-content button {
+    width: 100%;
   }
 }
 
