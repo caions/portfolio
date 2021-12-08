@@ -1,3 +1,4 @@
+/* TODO adicinar var colors */
 * {
   margin: 0;
   padding: 0;
@@ -222,8 +223,12 @@ a:visited {
 
 .form-group i {
   position: relative;
-  top: 38px;
+  top: -27px;
   width: fit-content;
+}
+
+.form-group .fa-comment {
+  top: -137px;
 }
 
 .form-group textarea {
@@ -258,7 +263,25 @@ textarea {
 #form-content input:focus,
 textarea:focus {
   outline: none;
-  outline: #f2545b;
+}
+
+#effect-row {
+  top: -17px;
+  position: relative;
+  width: 0;
+  height: 1px;
+  background: #f2545b;
+  transition: width 500ms ease-out;
+}
+
+#form-content input:focus ~ #effect-row,
+textarea:focus ~ #effect-row {
+  width: 100%;
+}
+
+#form-content input:focus ~ i,
+textarea:focus ~ i {
+  color: #f2545b;
 }
 
 #form-content button {
@@ -380,3 +403,8 @@ textarea:focus {
     border-bottom: #f2545b solid 10px;
   }
 } */
+
+/* @keyframes mymove {
+  from {width: 0px;}
+  to { width: 100px; }
+ } */
