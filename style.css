@@ -43,6 +43,10 @@ a:visited {
   display: none;
 }
 
+#burger-menu li {
+  display: none;
+}
+
 #header {
   text-align: right;
 }
@@ -376,32 +380,49 @@ textarea:focus ~ i {
   #burger-icon {
     display: flex;
     position: absolute;
-    left: 90%;
+    left: 85%;
     top: 3%;
     font-size: 35px;
     z-index: -1;
   }
 
   #burger-icon:focus-within ~ #burger-menu {
-    color: red;
+    width: 230px;
+    background: #f2545b;
+  }
+
+  #burger-icon:focus-within ~ #burger-menu li {
     display: flex;
   }
 
   #burger-menu {
-    display: none;
+    display: flex;
+    background: #f2545b;
     position: absolute;
-    left: 49%;
-    top: 0%;
-    width: 50%;
-    height: 50%;
-    border: 2px solid red;
-    background: gray;
+    right: -18%;
+    top: -3%;
+    width: 0px;
+    height: 230px;
+    transition: width 500ms;
+    border-radius: 100%;
+    opacity: 95%;
+  }
+
+  #burger-menu ul {
+    margin-top: 84px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   #burger-menu li {
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-bottom: 22px;
+    margin-left: 21px;
     list-style: none;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
   }
 
   #profile-container {
