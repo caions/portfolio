@@ -35,6 +35,14 @@ a:visited {
   color: inherit;
 }
 
+#burger-icon {
+  display: none;
+}
+
+#burger-menu {
+  display: none;
+}
+
 #header {
   text-align: right;
 }
@@ -362,10 +370,38 @@ textarea:focus ~ i {
 
   #header {
     text-align: center;
+    display: none;
   }
-  #header a {
-    text-align: center;
-    padding: 0;
+
+  #burger-icon {
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 3%;
+    font-size: 35px;
+    z-index: -1;
+  }
+
+  #burger-icon:focus-within ~ #burger-menu {
+    color: red;
+    display: flex;
+  }
+
+  #burger-menu {
+    display: none;
+    position: absolute;
+    left: 49%;
+    top: 0%;
+    width: 50%;
+    height: 50%;
+    border: 2px solid red;
+    background: gray;
+  }
+
+  #burger-menu li {
+    margin-top: 50px;
+    margin-left: 20px;
+    list-style: none;
   }
 
   #profile-container {
