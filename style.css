@@ -109,23 +109,7 @@ a:visited {
   min-height: 310px;
 }
 
-.card {
-  margin: 0px 15px;
-  min-width: 260px;
-  border-radius: 7px;
-  padding: 30px 25px;
-  border: 1px solid #19323c;
-  background-color: #213a44;
-  box-shadow: 0px 0px 20px 3px #112229;
-  transition: border-bottom 500ms;
-  opacity: 0.3;
-  transition: opacity 500ms;
-}
 
-
-.card:hover {
-  opacity: 1;
-}
 
 .card:nth-child(1):hover {
   border-bottom: #5fdafa solid 10px;
