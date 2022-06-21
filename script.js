@@ -1,4 +1,4 @@
-import { EMAIL, PASSWORD } from './env.js'
+//import { EMAIL, PASSWORD } from './env.js'
 
 const sendEmail = async(event) => {
   event.preventDefault();
@@ -11,8 +11,8 @@ const sendEmail = async(event) => {
     Email.send({  
       Host: "smtp.elasticemail.com",
       Port: "2525",
-      Username : EMAIL,
-      Password : PASSWORD,
+      Username : process.env.EMAIL,
+      Password : process.env.PASSWORD,
       To : EMAIL,
       From : EMAIL,
       Subject : "email enviado do meu portfolio",
