@@ -1,22 +1,31 @@
-const getRequest = async(event) => {
+import { EMAIL, PASSWORD } from './env.js'
+
+const sendEmail = async(event) => {
   event.preventDefault();
-  let url = "https://api.github.com/users/caions";
-  let req = new XMLHttpRequest()
-  req.open("GET",url);
-  req.onload = () => {
-    if (req.status == 200) {
-      let result = JSON.parse(req.responseText)
-      document.getElementById('nome').value = result.name;
-      document.getElementById('email').value = result.html_url;
-      document.getElementById('textArea').value = result.bio;
-    } else {
-      alert("Error: " + req.status);
-    }
+  
+  let name = document.getElementById('nome').value
+  let email = document.getElementById('email').value
+  let texto = document.getElementById('textArea').value
+
+  try {
+    Email.send({  
+      Host: "smtp.elasticemail.com",
+      Port: "2525",
+      Username : EMAIL,
+      Password : PASSWORD,
+      To : EMAIL,
+      From : EMAIL,
+      Subject : "email enviado do meu portfolio",
+      Body : `Oi Caio, me chamo ${name}, meu email é ${email}. ${texto}`,
+      })
+    alert("Email enviado com sucesso")
+  } catch (error) {
+    console.log(error)
+    alert("Falha no envio")
   }
-  req.send()
 }
 
 document.getElementById('button').addEventListener(
-  'click', getRequest
+  'click', sendEmail
 );
 
