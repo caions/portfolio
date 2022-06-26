@@ -284,13 +284,13 @@ textarea:focus {
   transition: width 500ms ease-out;
 }
 
-#form-content input:focus ~ #effect-row,
-textarea:focus ~ #effect-row {
+#form-content input:focus~#effect-row,
+textarea:focus~#effect-row {
   width: 100%;
 }
 
-#form-content input:focus ~ i,
-textarea:focus ~ i {
+#form-content input:focus~i,
+textarea:focus~i {
   color: #f2545b;
 }
 
@@ -375,6 +375,12 @@ textarea:focus ~ i {
     margin: 40px 30px;
   }
 
+@media (max-width: 400px) {
+  #form-content button {
+    width: 100%;
+  }
+}
+
   #header {
     text-align: center;
     display: none;
@@ -435,6 +441,7 @@ textarea:focus ~ i {
   #profile-name {
     font-size: 2.5rem;
   }
+
   #profile-description {
     font-size: 1.4rem;
   }
@@ -451,11 +458,5 @@ textarea:focus ~ i {
 
   #footer-container span {
     display: block;
-  }
-}
-
-@media (max-width: 400px) {
-  #form-content button {
-    width: 100%;
   }
 }
