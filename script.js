@@ -2,6 +2,10 @@ const getValueFromElement = (elementId) => {
   return document.getElementById(elementId).value;
 }
 
+const setFooterYear = () => {
+  document.getElementById('footerYear').innerHTML = new Date().getFullYear()
+}
+
 const sendEmail = async () => {
   const name = getValueFromElement('nome');
   const email = getValueFromElement('email');
@@ -40,6 +44,10 @@ const submitForm = async () => {
     alert('Atualmente, não estamos conseguindo enviar e-mails. \n Por favor, contate-me pelo WhatsApp');
   }
 }
+
+window.addEventListener('load', () => {
+  setFooterYear()
+});
 
 document.getElementById('form-content').addEventListener('submit', (event) => {
   event.preventDefault();
