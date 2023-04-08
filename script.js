@@ -5,30 +5,27 @@ const getValueFromElement = (elementId) => {
 const sendEmail = async () => {
   const name = getValueFromElement('nome');
   const email = getValueFromElement('email');
-  const message = getValueFromElement('textArea');
-  try {
-    const res = await Email.send({
-      Host: 'smtp.elasticemail.com',
-      Port: '2525',
-      Username: process.env.EMAIL,
-      Password: process.env.PASSWORD,
-      To: email,
-      From: process.env.EMAIL,
-      Subject: 'email enviado do meu portfolio',
-      Body: `Oi Caio, me chamo ${name}, meu email é ${email}. <br> ${message}`
-    })
-    if (res.includes('addresses')) {
-      throw new Error('Favor preencha seu email')
-    }
-    if (res !== 'OK') {
-      throw new Error(res);
-    }
-
-    return res
-  } catch (error) {
-    throw error
+  const text = getValueFromElement('textArea');
+  if (!email) {
+    throw new Error('Favor preencha seu email')
   }
-}
+
+  const response = await fetch('https://send-email-caions.herokuapp.com/send-email',
+    {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, email, text })
+    });
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(error.error || 'Erro interno do servidor');
+  }
+  return response.json();
+
+};
+
 
 const submitForm = async () => {
   try {
