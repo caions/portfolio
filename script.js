@@ -2,6 +2,14 @@ const getValueFromElement = (elementId) => {
   return document.getElementById(elementId).value;
 }
 
+const headerLinks = document.querySelectorAll('#header a');
+
+const smoothScroll = (event) => {
+  event.preventDefault();
+  const target = document.querySelector(event.currentTarget.getAttribute('href'));
+  target.scrollIntoView({ behavior: 'smooth' });
+}
+
 const setFooterYear = () => {
   document.getElementById('footerYear').innerHTML = new Date().getFullYear()
 }
@@ -50,6 +58,10 @@ const submitForm = async () => {
     alert('Atualmente, não estamos conseguindo enviar e-mails. \n Por favor, contate-me pelo WhatsApp');
   }
 }
+
+headerLinks.forEach(link => {
+  link.addEventListener('click', smoothScroll);
+});
 
 window.addEventListener('load', () => {
   setFooterYear()
