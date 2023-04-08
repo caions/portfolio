@@ -6,6 +6,12 @@ const setFooterYear = () => {
   document.getElementById('footerYear').innerHTML = new Date().getFullYear()
 }
 
+const clearForm = () =>{
+  document.getElementById('nome').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('textArea').value = '';
+}
+
 const sendEmail = async () => {
   const name = getValueFromElement('nome');
   const email = getValueFromElement('email');
@@ -30,10 +36,10 @@ const sendEmail = async () => {
 
 };
 
-
 const submitForm = async () => {
   try {
     await sendEmail();
+    clearForm()
     alert('Email enviado com sucesso');
   } catch (error) {
     console.error(error.message)
