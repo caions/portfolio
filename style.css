@@ -343,7 +343,7 @@ textarea:focus ~ i {
   transition: opacity 0.5s ease-in-out;
 }
 
-#whatsapp-link {
+#whatsapp-icon-link {
   pointer-events: none;
 }
 

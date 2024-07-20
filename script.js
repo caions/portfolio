@@ -110,15 +110,15 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', function () {
   let scrollPosition = window.scrollY || document.documentElement.scrollTop;
   let whatsappIcon = document.getElementById('whatsapp-icon');
-  let whatsappLink = document.getElementById('whatsapp-link');
+  let whatsappIconLink = document.getElementById('whatsapp-icon-link');
   let triggerHeight = 1200;
   var triggerWidth = 800;
   let mobileSize = scrollPosition > triggerHeight && window.innerWidth < triggerWidth
   if (mobileSize) {
     whatsappIcon.style.opacity = 1;
-    whatsappLink.style.pointerEvents = 'auto';
+    whatsappIconLink.style.pointerEvents = 'auto';
   } else {
     whatsappIcon.style.opacity = 0;
-    whatsappLink.style.pointerEvents = 'none';
+    whatsappIconLink.style.pointerEvents = 'none';
   }
 });
