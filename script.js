@@ -14,7 +14,7 @@ const setFooterYear = () => {
   document.getElementById('footerYear').innerHTML = new Date().getFullYear()
 }
 
-const clearForm = () =>{
+const clearForm = () => {
   document.getElementById('nome').value = '';
   document.getElementById('email').value = '';
   document.getElementById('textArea').value = '';
@@ -70,4 +70,39 @@ window.addEventListener('load', () => {
 document.getElementById('form-content').addEventListener('submit', (event) => {
   event.preventDefault();
   submitForm();
+});
+
+const languageSelector = document.getElementById('language-selector');
+const translations = {};
+
+const loadTranslations = async () => {
+  try {
+    const response = await fetch('translations.json');
+    const data = await response.json();
+    Object.assign(translations, data);
+  } catch (error) {
+    console.error('Erro ao carregar traduções:', error);
+  }
+};
+
+const updateText = (lang) => {
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    element.textContent = translations[lang][key] || key;
+  });
+};
+
+const switchLanguage = (event) => {
+  const lang = event.target.id;
+  updateText(lang);
+};
+
+languageSelector.addEventListener('click', switchLanguage);
+
+window.addEventListener('load', () => {
+  loadTranslations().then(() => {
+    const defaultLang = document.documentElement.lang || 'pt-br';
+    updateText(defaultLang);
+  });
 });

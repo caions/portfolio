@@ -7,8 +7,6 @@
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,90 +15,106 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfólio - Caio Nascimento</title>
+    <title data-i18n="page-title">Portfólio - Caio Nascimento</title>
   </head>
   <body>
+    <div id="language-selector">
+      <img
+        src="path/to/portuguese-flag.png"
+        alt="Português"
+        id="pt-br"
+        style="cursor: pointer"
+      />
+      <img
+        src="path/to/english-flag.png"
+        alt="English"
+        id="en"
+        style="cursor: pointer"
+      />
+    </div>
     <div id="burger-icon">
       <a href="#">
         <i class="far fa-bars"></i>
       </a>
-
       <div id="burger-menu">
         <ul>
           <a href="#experiences-container">
-            <li>Habilidades</li>
+            <li data-i18n="burger-menu-item-1">Habilidades</li>
           </a>
           <a href="#contact-container">
-            <li>Contato</li>
+            <li data-i18n="burger-menu-item-2">Contato</li>
           </a>
         </ul>
       </div>
     </div>
     <div id="header">
-      <a href="#profile-container">Perfil</a>
-      <a href="#experiences-container">Habilidades</a>
-      <a href="#contact-container">Contato</a>
+      <a href="#profile-container" data-i18n="header-link-1">Perfil</a>
+      <a href="#experiences-container" data-i18n="header-link-2">Habilidades</a>
+      <a href="#contact-container" data-i18n="header-link-3">Contato</a>
     </div>
     <div id="profile-container">
       <img id="profile-image" src="profile-photo.png" alt="foto-perfil" />
-      <h1 id="profile-name">Caio Nascimento</h1>
-      <p id="profile-description">Desenvolvedor Fullstack</p>
+      <h1 id="profile-name" data-i18n="profile-name">Caio Nascimento</h1>
+      <p id="profile-description" data-i18n="profile-description">
+        Desenvolvedor Fullstack
+      </p>
       <a
         id="profile-cv-link"
         href="https://www.melhoresdetudo.com.br"
         target="blank"
         download
+        data-i18n="profile-cv-link"
         >Visualizar Blog</a
       >
     </div>
     <div id="experiences-container">
-      <h2>Habilidades</h2>
+      <h2 data-i18n="experiences-title">Habilidades</h2>
       <div id="card-container">
         <div class="card">
           <div class="card-icon" id="react-icon">
             <i class="fab fa-react"></i>
           </div>
-          <div class="card-title">FrontEnd</div>
-          <div class="card-body">
-            Com mais de dois anos de experiência no mercado, 
-            possuo habilidades para realizar o 
-            design de acordo com as necessidades específicas dos clientes. 
-            Utilizo ferramentas como Figma e React.js com o objetivo de assegurar 
-            uma manutenção simplificada e uma escalabilidade eficiente do site.
+          <div class="card-title" data-i18n="card-title-frontend">FrontEnd</div>
+          <div class="card-body" data-i18n="card-body-frontend">
+            Com mais de dois anos de experiência no mercado, possuo habilidades
+            para realizar o design de acordo com as necessidades específicas dos
+            clientes. Utilizo ferramentas como Figma e React.js com o objetivo
+            de assegurar uma manutenção simplificada e uma escalabilidade
+            eficiente do site.
           </div>
         </div>
         <div class="card">
           <div class="card-icon" id="node-icon">
             <i class="fab fa-node-js"></i>
           </div>
-          <div class="card-title">BackEnd</div>
-          <div class="card-body">
-            Possuo experiência na criação de APIs REST com Node.js, 
-            tanto para bancos de dados relacionais como não relacionais. 
-            Utilizo as melhores práticas do mercado para garantir a construção 
-            de aplicações robustas e de alto desempenho.
+          <div class="card-title" data-i18n="card-title-backend">BackEnd</div>
+          <div class="card-body" data-i18n="card-body-backend">
+            Possuo experiência na criação de APIs REST com Node.js, tanto para
+            bancos de dados relacionais como não relacionais. Utilizo as
+            melhores práticas do mercado para garantir a construção de
+            aplicações robustas e de alto desempenho.
           </div>
         </div>
         <div class="card">
           <div class="card-icon" id="cloud-icon">
             <i class="fas fa-cloud"></i>
           </div>
-          <div class="card-title">Cloud</div>
-          <div class="card-body">
-            Ao utilizar serviços em nuvem, como o Google Cloud, 
-            sou capaz de criar soluções flexíveis e escaláveis, 
-            adaptadas às necessidades específicas de cada projeto. 
-            Isso significa que posso ajudar você a implementar uma 
-            infraestrutura confiável para armazenar e acessar dados de forma segura.
+          <div class="card-title" data-i18n="card-title-cloud">Cloud</div>
+          <div class="card-body" data-i18n="card-body-cloud">
+            Ao utilizar serviços em nuvem, como o Google Cloud, sou capaz de
+            criar soluções flexíveis e escaláveis, adaptadas às necessidades
+            específicas de cada projeto. Isso significa que posso ajudar você a
+            implementar uma infraestrutura confiável para armazenar e acessar
+            dados de forma segura.
           </div>
         </div>
       </div>
     </div>
     <div id="contact-container">
-      <h2 id="contact-title">Contato</h2>
+      <h2 id="contact-title" data-i18n="contact-title">Contato</h2>
       <div id="contact-content">
         <div id="adress-content">
-          <h3>Entrar em contato</h3>
+          <h3 data-i18n="contact-form-title">Entrar em contato</h3>
           <iframe
             id="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127394.50263022544!2d-38.589656338486265!3d-3.793140330719424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1637538960584!5m2!1spt-BR!2sbr"
@@ -113,32 +127,31 @@
           <div id="contact-details">
             <div class="contact-details-group">
               <i class="fas fa-map-marker-alt"></i>
-              <p>Fortaleza-CE, BRA</p>
+              <p data-i18n="contact-address">Fortaleza-CE, BRA</p>
             </div>
             <div class="contact-details-group">
               <i class="fas fa-envelope"></i>
-              <p>caionsantosen@gmail.com</p>
+              <p data-i18n="contact-email">caionsantosen@gmail.com</p>
             </div>
             <div class="contact-details-group">
               <i class="fab fa-whatsapp"></i>
-              <p>+55 85 98605-5270</p>
+              <p data-i18n="contact-whatsapp">+55 85 98605-5270</p>
             </div>
             <div class="contact-details-group">
               <i class="fas fa-check"></i>
-              <p>Avaliable</p>
+              <p data-i18n="contact-available">Disponível</p>
             </div>
           </div>
         </div>
         <form action="" id="form-content">
-          <h3>Formulário de Contato</h3>
+          <h3 data-i18n="contact-form-title">Formulário de Contato</h3>
           <div class="form-group">
             <input
               class="input-style"
               type="text"
-              name=""
               id="nome"
-              value=""
               placeholder="Nome"
+              data-i18n="contact-form-name-placeholder"
             />
             <i class="fas fa-user"></i>
             <span id="effect-row"></span>
@@ -147,9 +160,9 @@
             <input
               class="input-style"
               type="email"
-              name=""
               id="email"
               placeholder="Email"
+              data-i18n="contact-form-email-placeholder"
             />
             <i class="fas fa-envelope"></i>
             <span id="effect-row"></span>
@@ -157,35 +170,41 @@
           <div class="form-group">
             <textarea
               class="input-style"
-              name=""
               id="textArea"
               cols="30"
               rows="50"
               placeholder="Digite a sua mensagem"
+              data-i18n="contact-form-message-placeholder"
             ></textarea>
             <i class="fas fa-comment"></i>
             <span id="effect-row"></span>
           </div>
-          <button type="submit" id="button">Enviar Mensagem</button>
+          <button type="submit" id="button" data-i18n="contact-form-submit">
+            Enviar Mensagem
+          </button>
         </form>
       </div>
     </div>
     <div id="footer-container">
-      <p><span id="footerYear"></span> Caio Nascimento. <span>Todos os direitos reservados</span></p>
+      <p>
+        <span id="footerYear"></span> Caio Nascimento.
+        <span data-i18n="footer-rights">Todos os direitos reservados</span>
+      </p>
       <span id="social-icons">
         <a
           href="https://www.linkedin.com/in/caionsantos/"
           target="blank"
-          title="ir para a pagina do linkedin"
+          title="data-i18n='linkedin-title'"
         >
-          <i class="fab fa-linkedin"></i
-        ></a>
+          <i class="fab fa-linkedin"></i>
+        </a>
         <a
           href="https://github.com/caions"
           target="blank"
-          title="ir para a pagina do github"
-          ><i class="fab fa-github-square"></i
-        ></a>
+          title="data-i18n='github-title'"
+        >
+          <i class="fab fa-github-square"></i>
+        </a>
       </span>
     </div>
   </body>
