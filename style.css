@@ -422,9 +422,13 @@ textarea:focus ~ i {
     }
   }
 
-  #header {
+  #header > * {
     text-align: center;
     display: none;
+  }
+
+  #header > #language-selector {
+    display: block;
   }
 
   /* #burger-icon {
