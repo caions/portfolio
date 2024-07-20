@@ -337,6 +337,16 @@ textarea:focus ~ i {
   margin-left: 15px;
 }
 
+#whatsapp-icon {
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#whatsapp-link {
+  pointer-events: none;
+}
+
 /* Media queries */
 @media (max-width: 1050px) {
   #card-container {
@@ -383,6 +393,16 @@ textarea:focus ~ i {
     display: none;
   }
 
+  #whatsapp-button {
+    display: none;
+  }
+
+  #whatsapp-icon {
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 20px;
+  }
   #footer-container {
     height: 107px;
     flex-direction: column-reverse;
