@@ -1,4 +1,17 @@
-/* TODO adicinar var colors */
+:root {
+  --background-color: #222526;
+  --text-color: #f3f7f0;
+  --primary-color: #f2545b;
+  --accent-color-1: #5fdafa;
+  --accent-color-2: #90c53f;
+  --accent-color-3: #e31f71;
+  --card-background: #213a44;
+  --card-border: #19323c;
+  --card-shadow: #112229;
+  --form-border: #f3f7f0;
+  --scrollbar-thumb: #11222994;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +20,8 @@
 body {
   max-width: 1050px;
   font-family: "Roboto", sans-serif;
-  background-color: #222526;
-  color: #f3f7f0;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 40px auto;
 }
 
@@ -28,7 +41,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #f3f7f0;
+  color: var(--text-color);
 }
 
 a:visited {
@@ -52,13 +65,12 @@ a:visited {
 }
 
 #header a {
-  /* color: #f3f7f0; */
   padding: 5px 10px;
   transition: background-color 500ms;
 }
 
 #header a:hover {
-  background-color: #f2545b;
+  background-color: var(--primary-color);
 }
 
 #profile-container {
@@ -71,7 +83,7 @@ a:visited {
   width: 185px;
   border-radius: 50%;
   margin-bottom: 30px;
-  border: solid 7px;
+  border: solid 7px var(--text-color);
 }
 
 #profile-name {
@@ -85,16 +97,16 @@ a:visited {
 }
 
 #profile-cv-link {
-  color: #f3f7f0;
+  color: var(--text-color);
   padding: 5px 10px;
   margin-bottom: 30px;
   font-weight: bolder;
-  border: solid 2px #f2545b;
+  border: solid 2px var(--primary-color);
   transition: background-color 500ms;
 }
 
 #profile-cv-link:hover {
-  background-color: #f2545b;
+  background-color: var(--primary-color);
 }
 
 #experiences-container {
@@ -114,12 +126,11 @@ a:visited {
   min-width: 260px;
   border-radius: 7px;
   padding: 30px 25px;
-  border: 1px solid #19323c;
-  background-color: #213a44;
-  box-shadow: 0px 0px 20px 3px #112229;
-  transition: border-bottom 500ms;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-background);
+  box-shadow: 0px 0px 20px 3px var(--card-shadow);
+  transition: border-bottom 500ms, opacity 500ms;
   opacity: 0.3;
-  transition: opacity 500ms;
 }
 
 .card:hover {
@@ -127,29 +138,29 @@ a:visited {
 }
 
 .card:nth-child(1):hover {
-  border-bottom: #5fdafa solid 10px;
+  border-bottom: var(--accent-color-1) solid 10px;
 }
 
 .card:nth-child(1):hover #react-icon {
-  color: #5fdafa;
+  color: var(--accent-color-1);
   background: #1598c0;
 }
 
 .card:nth-child(2):hover {
-  border-bottom: #90c53f solid 10px;
+  border-bottom: var(--accent-color-2) solid 10px;
 }
 
 .card:nth-child(2):hover #node-icon {
-  color: #90c53f;
+  color: var(--accent-color-2);
   background: #6f8c41;
 }
 
 .card:nth-child(3):hover {
-  border-bottom: #e31f71 solid 10px;
+  border-bottom: var(--accent-color-3) solid 10px;
 }
 
 .card:nth-child(3):hover #cloud-icon {
-  color: #e31f71;
+  color: var(--accent-color-3);
   background: #4f2839;
 }
 
@@ -162,7 +173,7 @@ a:visited {
   height: 40px;
   text-align: center;
   padding: 12px;
-  transition: color, background-color 500ms;
+  transition: color 500ms, background-color 500ms;
 }
 
 .card-title {
@@ -251,7 +262,7 @@ a:visited {
 }
 
 .form-group textarea::-webkit-scrollbar-thumb {
-  background: #11222994;
+  background: var(--scrollbar-thumb);
   border-radius: 5px;
 }
 
@@ -264,10 +275,10 @@ textarea {
 #form-content input,
 textarea {
   margin-top: 25px;
-  background-color: #222526;
+  background-color: var(--background-color);
   border: none;
-  border-bottom: solid 1px #f3f7f0;
-  color: #f3f7f0;
+  border-bottom: solid 1px var(--form-border);
+  color: var(--text-color);
 }
 
 #form-content input:focus,
@@ -280,24 +291,24 @@ textarea:focus {
   position: relative;
   width: 0;
   height: 1px;
-  background: #f2545b;
+  background: var(--primary-color);
   transition: width 500ms ease-out;
 }
 
-#form-content input:focus~#effect-row,
-textarea:focus~#effect-row {
+#form-content input:focus ~ #effect-row,
+textarea:focus ~ #effect-row {
   width: 100%;
 }
 
-#form-content input:focus~i,
-textarea:focus~i {
-  color: #f2545b;
+#form-content input:focus ~ i,
+textarea:focus ~ i {
+  color: var(--primary-color);
 }
 
 #form-content button {
-  color: #f3f7f0;
+  color: var(--text-color);
   margin-top: 10px;
-  background-color: #f2545b;
+  background-color: var(--primary-color);
   border-radius: 4px;
   padding: 8px;
   margin-top: 29px;
@@ -315,8 +326,7 @@ textarea:focus~i {
   margin-left: 15px;
 }
 
-/* media querys */
-
+/* Media queries */
 @media (max-width: 1050px) {
   #card-container {
     display: flex;
@@ -375,11 +385,11 @@ textarea:focus~i {
     margin: 40px 30px;
   }
 
-@media (max-width: 400px) {
-  #form-content button {
-    width: 100%;
+  @media (max-width: 400px) {
+    #form-content button {
+      width: 100%;
+    }
   }
-}
 
   #header {
     text-align: center;
