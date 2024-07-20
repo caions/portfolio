@@ -16,7 +16,6 @@
     "card-title-cloud": "Cloud",
     "card-body-cloud": "Ao utilizar serviços em nuvem, como o Google Cloud, sou capaz de criar soluções flexíveis e escaláveis, adaptadas às necessidades específicas de cada projeto. Isso significa que posso ajudar você a implementar uma infraestrutura confiável para armazenar e acessar dados de forma segura.",
     "contact-title": "Contato",
-    "contact-form-title": "Formulário de Contato",
     "contact-form-name-placeholder": "Nome",
     "contact-form-email-placeholder": "Email",
     "contact-form-message-placeholder": "Digite a sua mensagem",
@@ -27,7 +26,8 @@
     "contact-available": "Disponível",
     "footer-rights": "Todos os direitos reservados",
     "linkedin-title": "ir para a página do LinkedIn",
-    "github-title": "ir para a página do GitHub"
+    "github-title": "ir para a página do GitHub",
+    "page-title": "Portfólio - Caio Nascimento"
   },
   "en": {
     "profile-name": "Caio Nascimento",
@@ -46,7 +46,6 @@
     "card-title-cloud": "Cloud",
     "card-body-cloud": "By using cloud services such as Google Cloud, I am able to create flexible and scalable solutions tailored to the specific needs of each project. This means I can help you implement a reliable infrastructure to store and access data securely.",
     "contact-title": "Contact",
-    "contact-form-title": "Contact Form",
     "contact-form-name-placeholder": "Name",
     "contact-form-email-placeholder": "Email",
     "contact-form-message-placeholder": "Enter your message",
@@ -57,6 +56,7 @@
     "contact-available": "Available",
     "footer-rights": "All rights reserved",
     "linkedin-title": "go to LinkedIn page",
-    "github-title": "go to GitHub page"
+    "github-title": "go to GitHub page",
+    "page-title": "Portfolio - Caio Nascimento"
   }
 }
