@@ -18,20 +18,6 @@
     <title data-i18n="page-title">Portfólio - Caio Nascimento</title>
   </head>
   <body>
-    <div id="language-selector">
-      <img
-        src="path/to/portuguese-flag.png"
-        alt="Português"
-        id="pt-br"
-        style="cursor: pointer"
-      />
-      <img
-        src="path/to/english-flag.png"
-        alt="English"
-        id="en"
-        style="cursor: pointer"
-      />
-    </div>
     <div id="burger-icon">
       <a href="#">
         <i class="far fa-bars"></i>
@@ -48,12 +34,38 @@
       </div>
     </div>
     <div id="header">
-      <a href="#profile-container" data-i18n="header-link-1">Perfil</a>
-      <a href="#experiences-container" data-i18n="header-link-2">Habilidades</a>
-      <a href="#contact-container" data-i18n="header-link-3">Contato</a>
+      <div id="language-selector">
+        <img
+          src="assets/brazilian-flag.png"
+          alt="Português"
+          id="pt-br"
+          style="cursor: pointer"
+          height="25"
+          width="25"
+        />
+        <img
+          src="assets/uk-flag.png"
+          alt="English"
+          id="en"
+          style="cursor: pointer"
+          height="25"
+          width="25"
+        />
+      </div>
+      <div>
+        <a href="#profile-container" data-i18n="header-link-1">Perfil</a>
+        <a href="#experiences-container" data-i18n="header-link-2"
+          >Habilidades</a
+        >
+        <a href="#contact-container" data-i18n="header-link-3">Contato</a>
+      </div>
     </div>
     <div id="profile-container">
-      <img id="profile-image" src="profile-photo.png" alt="foto-perfil" />
+      <img
+        id="profile-image"
+        src="assets/profile-photo.png"
+        alt="foto-perfil"
+      />
       <h1 id="profile-name" data-i18n="profile-name">Caio Nascimento</h1>
       <p id="profile-description" data-i18n="profile-description">
         Desenvolvedor Fullstack

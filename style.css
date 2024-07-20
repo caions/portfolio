@@ -62,6 +62,13 @@ a:visited {
 
 #header {
   text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+#language-selector img {
+  margin: 0 5px;
 }
 
 #header a {
