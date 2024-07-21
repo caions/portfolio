@@ -95,7 +95,7 @@ const updateText = (lang) => {
 
 const switchLanguage = (event) => {
   const lang = event.target.id;
-  if (lang == 'pt-b') {
+  if (lang == 'pt-br') {
     document.getElementById('profile-cv-link').href = "assets/caio-curriculo-2024.pdf"
   }
   if (lang == 'en') {
