@@ -2,7 +2,7 @@
   "pt-br": {
     "profile-name": "Caio Nascimento",
     "profile-description": "Desenvolvedor Fullstack",
-    "profile-cv-link": "Visualizar Blog",
+    "profile-cv-link": "Baixar Currículo",
     "burger-menu-item-1": "Habilidades",
     "burger-menu-item-2": "Contato",
     "header-link-profile": "Perfil",
@@ -35,7 +35,7 @@
   "en": {
     "profile-name": "Caio Nascimento",
     "profile-description": "Fullstack Developer",
-    "profile-cv-link": "View Blog",
+    "profile-cv-link": "Download Resume",
     "burger-menu-item-1": "Skills",
     "burger-menu-item-2": "Contact",
     "header-link-profile": "Profile",

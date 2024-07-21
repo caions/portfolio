@@ -95,6 +95,12 @@ const updateText = (lang) => {
 
 const switchLanguage = (event) => {
   const lang = event.target.id;
+  if (lang == 'pt-b') {
+    document.getElementById('profile-cv-link').href = "assets/caio-curriculo-2024.pdf"
+  }
+  if (lang == 'en') {
+    document.getElementById('profile-cv-link').href = "assets/caio-resume-2024.pdf"
+  }
   updateText(lang);
 };
 
