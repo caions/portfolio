@@ -450,6 +450,21 @@ textarea:focus ~ i {
     display: none;
   }
 
+  .flickity-page-dots {
+    display: none;
+  }
+
+  #projects-container img {
+    width: 500px;
+    height: 300px;
+  }
+
+  .carousel {
+    width: 500px;
+    height: 390px;
+    margin: 0 auto;
+  }
+
   #form-content {
     width: 100%;
     padding: 0;
@@ -565,6 +580,17 @@ textarea:focus ~ i {
 
   .card {
     min-width: auto;
+  }
+
+  #projects-container img {
+    width: 325px;
+    height: 195px;
+  }
+
+  .carousel {
+    width: 325px;
+    height: 300px;
+    margin: 0 auto;
   }
 
   #footer-container span {
