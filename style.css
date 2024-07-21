@@ -194,6 +194,72 @@ a:visited {
   margin-bottom: 15px;
 }
 
+#projects-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#projects-container img {
+  width: 1000px;
+  height: 600px;
+}
+
+#projects-title {
+  margin-bottom: 20px;
+}
+
+.tags {
+  margin: 10px;
+}
+
+.tags span {
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.tags a {
+  color: var(--text-color);
+  font-weight: bolder;
+  border: solid 2px var(--primary-color);
+  transition: background-color 500ms;
+  padding: 10px;
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.tags a:hover {
+  background-color: var(--primary-color);
+}
+
+.carousel {
+  width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.flickity-page-dots {
+  bottom: 110px;
+  mix-blend-mode: difference;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border: 2px solid white;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.flickity-prev-next-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+
 #contact-container {
   display: flex;
   flex-direction: column;

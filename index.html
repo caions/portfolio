@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title data-i18n="page-title">Portfólio - Caio Nascimento</title>
   </head>
@@ -53,17 +57,20 @@
         />
       </div>
       <div>
-        <a href="#profile-container" data-i18n="header-link-1">Perfil</a>
-        <a href="#experiences-container" data-i18n="header-link-2"
+        <a href="#profile-container" data-i18n="header-link-profile">Perfil</a>
+        <a href="#experiences-container" data-i18n="header-link-skills"
           >Habilidades</a
         >
-        <a href="#contact-container" data-i18n="header-link-3">Contato</a>
+        <a href="#projects-container" data-i18n="header-link-projects"
+          >Projetos</a
+        >
+        <a href="#contact-container" data-i18n="header-link-contact">Contato</a>
       </div>
     </div>
     <div id="profile-container">
       <img
         id="profile-image"
-        src="assets/profile-photo.png"
+        src="assets/profile-photo.webp"
         alt="foto-perfil"
       />
       <h1 id="profile-name" data-i18n="profile-name">Caio Nascimento</h1>
@@ -118,6 +125,92 @@
             específicas de cada projeto. Isso significa que posso ajudar você a
             implementar uma infraestrutura confiável para armazenar e acessar
             dados de forma segura.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects-container">
+      <h2 data-i18n="projects-title" id="projects-title">Meus Projetos</h2>
+      <div
+        class="carousel"
+        data-flickity='{ 
+        "imagesLoaded": true, 
+        "percentPosition": false, 
+        "autoPlay": false,
+        "prevNextButtons": true,
+        "pageDots": true,
+        "setGallerySize": false,
+        "wrapAround": true
+      }'
+      >
+        <div>
+          <img src="assets/game-project.webp" />
+          <div class="tags">
+            <div>
+              <span>Next.js</span>
+              <span>Firebase</span>
+              <span>Typescript</span>
+              <span>Tailwind</span>
+            </div>
+            <a
+              href="https://game-project-next.vercel.app/"
+              target="_blank"
+              data-i18n="see-more"
+            >
+              Clique para ver mais
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src="assets/melhores-de-tudo.webp" />
+          <div class="tags">
+            <div>
+              <span>Blog</span>
+              <span>WordPress</span>
+              <span>SEO</span>
+            </div>
+            <a
+              href="https://melhoresdetudo.com.br/"
+              target="_blank"
+              data-i18n="see-more"
+            >
+              Clique para ver mais
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src="assets/habit-tracker.webp" />
+          <div class="tags">
+            <div>
+              <span>Node.js</span>
+              <span>Flutter</span>
+              <span>Unit Tests</span>
+              <span>Clean Architecture</span>
+            </div>
+            <a
+              href="https://caions.github.io/habit_tracker_web/"
+              target="_blank"
+              data-i18n="see-more"
+            >
+              Clique para ver mais
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src="assets/quiz-app.webp" />
+          <div class="tags">
+            <div>
+              <span>Angular</span>
+              <span>Java</span>
+              <span>Spring Boot</span>
+            </div>
+            <a
+              href="https://github.com/caions/impacta-angular"
+              target="_blank"
+              data-i18n="see-more"
+            >
+              Clique para ver mais
+            </a>
           </div>
         </div>
       </div>
@@ -240,5 +333,6 @@
       </span>
     </div>
   </body>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script type="module" src="script.js"></script>
 </html>

@@ -5,9 +5,10 @@
     "profile-cv-link": "Visualizar Blog",
     "burger-menu-item-1": "Habilidades",
     "burger-menu-item-2": "Contato",
-    "header-link-1": "Perfil",
-    "header-link-2": "Habilidades",
-    "header-link-3": "Contato",
+    "header-link-profile": "Perfil",
+    "header-link-skills": "Habilidades",
+    "header-link-projects": "Projetos",
+    "header-link-contact": "Contato",
     "experiences-title": "Habilidades",
     "card-title-frontend": "FrontEnd",
     "card-body-frontend": "Com mais de cinco anos de experiência no mercado, possuo habilidades para realizar o design de acordo com as necessidades específicas dos clientes. Utilizo ferramentas como Figma e React.js com o objetivo de assegurar uma manutenção simplificada e uma escalabilidade eficiente do site.",
@@ -27,7 +28,9 @@
     "footer-rights": "Todos os direitos reservados",
     "linkedin-title": "ir para a página do LinkedIn",
     "github-title": "ir para a página do GitHub",
-    "page-title": "Portfólio - Caio Nascimento"
+    "page-title": "Portfólio - Caio Nascimento",
+    "projects-title": "Meus Projetos",
+    "see-more": "Clique para ver mais"
   },
   "en": {
     "profile-name": "Caio Nascimento",
@@ -35,9 +38,10 @@
     "profile-cv-link": "View Blog",
     "burger-menu-item-1": "Skills",
     "burger-menu-item-2": "Contact",
-    "header-link-1": "Profile",
-    "header-link-2": "Skills",
-    "header-link-3": "Contact",
+    "header-link-profile": "Profile",
+    "header-link-skills": "Skills",
+    "header-link-projects": "Projects",
+    "header-link-contact": "Contact",
     "experiences-title": "Skills",
     "card-title-frontend": "FrontEnd",
     "card-body-frontend": "With over five years of market experience, I have the skills to design according to the specific needs of clients. I use tools such as Figma and React.js to ensure simplified maintenance and efficient scalability of the site.",
@@ -57,6 +61,8 @@
     "footer-rights": "All rights reserved",
     "linkedin-title": "go to LinkedIn page",
     "github-title": "go to GitHub page",
-    "page-title": "Portfolio - Caio Nascimento"
+    "page-title": "Portfolio - Caio Nascimento",
+    "projects-title": "My Projects",
+    "see-more": "Click to see more"
   }
 }
