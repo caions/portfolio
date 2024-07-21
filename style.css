@@ -383,13 +383,19 @@ textarea:focus ~ i {
 }
 
 #form-content button {
-  color: var(--text-color);
-  margin-top: 10px;
-  background-color: var(--primary-color);
-  border-radius: 4px;
-  padding: 8px;
+  cursor: pointer;
   margin-top: 29px;
   float: right;
+  color: var(--text-color);
+  padding: 5px 10px;
+  font-weight: bolder;
+  border: solid 2px var(--primary-color);
+  background-color: transparent;
+  transition: background-color 500ms;
+}
+
+#form-content button:hover {
+  background-color: var(--primary-color);
 }
 
 #footer-container {
